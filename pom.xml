@@ -54,8 +54,8 @@
     <java.version>1.8</java.version>
     <scala.minor.version>2.12</scala.minor.version>
     <scala.complete.version>2.12.17</scala.complete.version>
-    <spark.version>3.4.0</spark.version>
-    <breeze.version>0.13.2</breeze.version>
+    <spark.version>3.3.1</spark.version>
+    <breeze.version>1.2</breeze.version>
   </properties>
 
   <distributionManagement>
@@ -475,15 +475,5 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
-  <profiles>
-    <profile>
-      <id>scala-2.10</id>
-      <properties>
-        <scala.minor.version>2.10</scala.minor.version>
-        <scala.complete.version>2.10.6</scala.complete.version>
-      </properties>
-    </profile>
-  </profiles>
 
 </project>

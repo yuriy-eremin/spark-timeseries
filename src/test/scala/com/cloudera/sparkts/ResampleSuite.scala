@@ -19,11 +19,12 @@ import java.time.{ZonedDateTime, ZoneId}
 
 import org.apache.spark.mllib.linalg._
 
-import org.scalatest._
+import org.scalatest.funsuite.AnyFunSuite
+import org.scalatest.matchers.should.Matchers
 
 import scala.collection.mutable.ArrayBuffer
 
-class ResampleSuite extends FunSuite with ShouldMatchers {
+class ResampleSuite extends AnyFunSuite with Matchers {
   def verify(
       series: String,
       closedRight: Boolean,
